@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "chartJS": {
+    "SigfoxMonitor": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/chartJS",
+            "outputPath": "dist/SigfoxMonitor",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -25,7 +25,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/echarts/dist/echarts.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -57,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "chartJS:build"
+            "browserTarget": "SigfoxMonitor:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "chartJS:build:production"
+              "browserTarget": "SigfoxMonitor:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "chartJS:build"
+            "browserTarget": "SigfoxMonitor:build"
           }
         },
         "test": {
@@ -102,7 +104,7 @@
         }
       }
     },
-    "chartJS-e2e": {
+    "SigfoxMonitor-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -111,11 +113,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "chartJS:serve"
+            "devServerTarget": "SigfoxMonitor:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "chartJS:serve:production"
+              "devServerTarget": "SigfoxMonitor:serve:production"
             }
           }
         },
@@ -131,5 +133,5 @@
       }
     }
   },
-  "defaultProject": "chartJS"
+  "defaultProject": "SigfoxMonitor"
 }
