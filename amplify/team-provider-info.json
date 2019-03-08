@@ -1,0 +1,14 @@
+{
+    "angular": {
+        "awscloudformation": {
+            "AuthRoleName": "sigfoxmonitor-20190307205915-authRole",
+            "UnauthRoleArn": "arn:aws:iam::195682513998:role/sigfoxmonitor-20190307205915-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::195682513998:role/sigfoxmonitor-20190307205915-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "sigfoxmonitor-20190307205915-deployment",
+            "UnauthRoleName": "sigfoxmonitor-20190307205915-unauthRole",
+            "StackName": "sigfoxmonitor-20190307205915",
+            "StackId": "arn:aws:cloudformation:eu-west-1:195682513998:stack/sigfoxmonitor-20190307205915/dc95fb90-411b-11e9-8703-062647984902"
+        }
+    }
+}

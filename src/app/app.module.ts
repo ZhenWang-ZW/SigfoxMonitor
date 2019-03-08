@@ -4,19 +4,27 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { NgxEchartsModule } from 'ngx-echarts';
-import { MatToolbarModule, MatCardModule, MatGridListModule } from '@angular/material';
-
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MatToolbarModule, MatCardModule, MatGridListModule, MatDatepickerModule, MatNativeDateModule,MatFormFieldModule, MatInputModule } from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
     NgxEchartsModule,
     MatToolbarModule,
     MatCardModule,
     MatGridListModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatFormFieldModule,
+    MatInputModule,
     HttpClientModule
   ],
   providers: [],

@@ -1,5 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
+<div class="datepickdiv">
+  <label>Use Date Pick to show the Air Quality history</label><br/>
+  <mat-form-field >
+    <input matInput [matDatepicker]="dp3" [max]="maxDate" [value]="maxDate" placeholder="Select Date" (dateChange)="dateChange($event.value)" disabled>
+    <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+    <mat-datepicker #dp3 disabled="false" [startAt]="maxDate"></mat-datepicker>
+  </mat-form-field>
+</div>
+
+
 
 <mat-grid-list cols="2" rowHeight="20em">
   <mat-grid-tile echarts [options]="tempChartOpts" class="demo-chart"></mat-grid-tile>
